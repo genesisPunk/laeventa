@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/search_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragments.SignUpFragment">
+
+
+    <LinearLayout
+        android:id="@+id/send_otp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22.1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="21.1dp"
+            android:background="@drawable/rectangular_background"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.7dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:hint="Enter Your Mobile no/ email id"
+                android:inputType="text"
+                android:textColorHint="#9b9b9b"
+                android:textSize="14.4sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/send_otp_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rectangle"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Send OTP"
+            android:textColor="#ffffff"
+            android:textSize="14.4sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/customized_progressbar_signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#acffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi_progress_bar"
+            style="@style/AVLoadingIndicatorView.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:indicatorColor="@color/colorAccent"
+            app:indicatorName="BallClipRotateMultipleIndicator" />
+
+
+        <TextView
+            android:id="@+id/progress_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="sending OTP..."
+            android:textStyle="italic|bold"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/verify_otp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22.1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="21.1dp"
+            android:background="@drawable/rectangular_background"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.7dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:hint="Enter OTP here"
+                android:inputType="textPassword"
+                android:textColorHint="#9b9b9b"
+                android:textSize="14.4sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/verify_otp_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rectangle"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Verify OTP"
+            android:textColor="#ffffff"
+            android:textSize="14.4sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/set_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22.1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="21.1dp"
+            android:background="@drawable/rectangular_background"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.7dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:hint="Enter Password here"
+                android:inputType="textPassword"
+                android:textColorHint="#9b9b9b"
+                android:textSize="14.4sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/set_password_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rectangle"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="Set Password"
+            android:textColor="#ffffff"
+            android:textSize="14.4sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/success_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#acffffff"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/eutemia"
+            android:text="Congratulations!"
+            android:textSize="50sp"
+            android:textAlignment="center"
+            android:textColor="@color/textcolor"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/qarmic_sans"
+            android:text="Please login to continue."/>
+
+
+    </LinearLayout>
+</FrameLayout>

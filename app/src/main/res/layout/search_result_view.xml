@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/design_default_color_primary_dark"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp">
+
+
+        <ImageView
+            android:id="@+id/venue_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/venue" />
+
+        <LinearLayout
+            android:id="@+id/coupon_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#80ffffff"
+            android:layout_alignTop="@+id/venue_image">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_coupon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                android:text="15% off on advance booking!"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/favorite_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/venue_image"
+            android:layout_alignTop="@+id/venue_image"
+            android:layout_margin="3dp"
+            android:background="#80ffffff"
+            android:src="@drawable/ic_favorite_off" />
+
+        <TextView
+            android:id="@+id/venue_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/venue_image"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/rise"
+            android:text="Hotel Vrindavan"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/venue_image"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="₹1340 - ₹2500"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+
+        <LinearLayout
+            android:id="@+id/capacity_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/venue_name"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_sitting_capacity" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="230 - 250" />
+        </LinearLayout>
+
+
+        <RatingBar
+            android:id="@+id/search_result_bar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/price"
+            android:layout_alignTop="@+id/capacity_layout"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:outlineAmbientShadowColor="@color/colorAccent"
+            android:rating="4.1"
+            android:stepSize="0.1" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+</FrameLayout>
